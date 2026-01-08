@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Portal | UniClearance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">
+      <div class="icon">🛡️</div>
+      <div>
+        <h3>UniClearance</h3>
+        <small>SYSTEM</small>
+      </div>
+    </div>
+
+    <nav>
+      <a class="active">📊 Dashboard</a>
+      <a>📄 Clearance Certificate</a>
+      <a>📅 Appointments</a>
+      <a>📘 Guidelines</a>
+    </nav>
+
+    <div class="logout">⟵ Logout</div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main">
+
+    <!-- Topbar -->
+    <header class="topbar">
+      <h2>Student Portal</h2>
+      <div class="user">
+        🔔 <span class="avatar">AT</span>
+      </div>
+    </header>
+
+    <!-- Overview -->
+    <section class="overview">
+
+      <!-- Profile Card -->
+      <div class="profile-card">
+        <h1>Alex Thompson <span>0112230676</span></h1>
+
+        <div class="info">
+          <div>
+            <small>DEPARTMENT</small>
+            <p>Computer Science</p>
+          </div>
+          <div>
+            <small>BATCH</small>
+            <p>223</p>
+          </div>
+          <div>
+            <small>SEMESTER</small>
+            <p>8th (Final)</p>
+          </div>
+          <div>
+            <small>STATUS</small>
+            <span class="status">Active</span>
+          </div>
+        </div>
+
+        <div class="finance">
+          <small>TOTAL PAYABLE</small>
+          <h2>TK 65.50</h2>
+        </div>
+
+        <div class="actions">
+          <button class="btn primary">📅 Book Appointment</button>
+          <button class="btn danger">🚨 Emergency Clearance</button>
+        </div>
+
+        <div class="progress">
+          <div class="circle">20%</div>
+          <small>CLEARED</small>
+        </div>
+      </div>
+
+      <!-- Certificate Card -->
+      <div class="certificate-card">
+        <div class="cap">🎓</div>
+        <h3>Final Clearance</h3>
+        <p>Certificate available upon 100% completion or via Emergency Override.</p>
+        <button class="btn outline">4 Steps Remaining</button>
+      </div>
+
+    </section>
+
+    <!-- Modules -->
+    <section class="modules">
+      <h3>Clearance Modules <span>5 Total</span></h3>
+
+      <div class="grid">
+
+        <!-- Department -->
+        <div class="module pending">
+          <header>
+            <h4>Department Head</h4>
+            <span class="tag">Pending</span>
+          </header>
+          <p class="note">"Pending lab verification."</p>
+          <ul>
+            <li>○ Lab Equipment Return</li>
+            <li>○ HOD Confirmation</li>
+            <li class="done">✔ Dept. Society Dues</li>
+          </ul>
+          <small>Updated: 3:40:37 PM</small>
+        </div>
+
+        <!-- Library -->
+        <div class="module pending">
+          <header>
+            <h4>Library Services</h4>
+            <span class="tag">Pending</span>
+          </header>
+          <p class="note">"Strict verification required."</p>
+          <ul>
+            <li>○ All Borrowed Books</li>
+            <li>○ Book Damage Assessment</li>
+            <li class="done">✔ Library Account Status</li>
+          </ul>
+          <button class="pay">Pay TK 15.50 Now</button>
+        </div>
+
+        <!-- Bursary -->
+        <div class="module pending">
+          <header>
+            <h4>Bursary Office</h4>
+            <span class="tag">Pending</span>
+          </header>
+          <p class="note">"Payment successful."</p>
+
+          <div class="fees">
+            <div><span>Tuition Fee</span><span>TK 1000.00</span></div>
+            <div><span>Exam Fees</span><span>TK 150.00</span></div>
+            <div><span>ID Card Fine</span><span>TK 50.00</span></div>
+            <div class="total"><span>Total Due</span><span>TK 0.00</span></div>
+          </div>
+
+          <button class="upload">⬆ Upload Proof</button>
+        </div>
+
+        <!-- Registrar -->
+        <div class="module pending">
+          <header>
+            <h4>Registrar Office</h4>
+            <span class="tag">Pending</span>
+          </header>
+          <p class="note">"Awaiting final document submission."</p>
+          <ul>
+            <li>○ Registration Card Submission</li>
+            <li>○ Certificate Application Form</li>
+            <li>○ Verification of All Signatures</li>
+          </ul>
+          <button class="pay">Pay TK 50.00 Now</button>
+        </div>
+
+        <!-- Hostel -->
+        <div class="module approved">
+          <header>
+            <h4>Hostel Management</h4>
+            <span class="tag success">Approved</span>
+          </header>
+          <p class="note">"Room checked and keys returned."</p>
+          <ul>
+            <li class="done">✔ Hostel Rent (Dec)</li>
+            <li class="done">✔ Mess Dues</li>
+            <li class="done">✔ Room Handover</li>
+          </ul>
+          <small>Updated: 3:40:37 PM</small>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>
