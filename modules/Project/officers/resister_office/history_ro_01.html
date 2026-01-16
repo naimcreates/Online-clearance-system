@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>UniClearance Officer Portal</title>
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">U</div>
+                <div class="logo-text">
+                    <span class="brand-title">UniClearance</span>
+                    <span class="brand-sub">SYSTEM</span>
+                </div>
+            </div>
+
+            <nav class="nav" aria-label="Primary">
+                <a class="nav-link" href="register_office.html">
+                    <span class="nav-ic" aria-hidden="true">▦</span>
+                    <span>Queue Management</span>
+                </a>
+                <a class="nav-link" href="appoinment_req_ro.html">
+                    <span class="nav-ic" aria-hidden="true">📅</span>
+                    <span>Appointments</span>
+                </a>
+                <a class="nav-link active" href="history_ro_01.html">
+                    <span class="nav-ic" aria-hidden="true">〽</span>
+                    <span>Department Analytics</span>
+                </a>
+            </nav>
+
+            <button class="logout">Logout</button>
+        </aside>
+
+        <main class="main">
+            <header class="topbar">
+                <div class="topbar-left">
+                    <button class="icon-btn menu-btn">☰</button>
+                    <h1 class="topbar-title">Officer Portal</h1>
+                </div>
+                <div class="topbar-right">
+                    <button class="icon-btn bell-btn">🔔</button>
+                    <div class="user-info">
+                        <div class="user-text">
+                            <span class="user-name">Sarah Jenkins</span>
+                            <span class="user-role">OFFICER</span>
+                        </div>
+                        <div class="avatar-circle">SJ</div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="page">
+                <div class="page-header">
+                    <div>
+                        <h2 class="page-title">Analytics &amp; History</h2>
+                        <p class="page-subtitle">Overview of departmental performance and logs</p>
+                    </div>
+                    <div>
+                        <button class="filter-btn">
+                            <span>All Actions</span>
+                            <span class="chevron">▼</span>
+                        </button>
+                    </div>
+                </div>
+
+                <section class="cards">
+                    <div class="card">
+                        <div class="card-icon blue">📈</div>
+                        <div class="card-label">CLEARANCE RATE</div>
+                        <div class="card-value">17%</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon green">✔</div>
+                        <div class="card-label">APPROVED</div>
+                        <div class="card-value">1</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon red">✖</div>
+                        <div class="card-label">REJECTED</div>
+                        <div class="card-value">1</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon purple">📊</div>
+                        <div class="card-label">TOTAL PROCESSED</div>
+                        <div class="card-value">2</div>
+                    </div>
+                </section>
+
+                <section class="table-card">
+                    <div class="table-header">
+                        <h3 class="table-title">Process Logs</h3>
+                        <span class="table-total">Total: 2</span>
+                    </div>
+
+                    <table class="logs-table">
+                        <thead>
+                            <tr>
+                                <th>STUDENT ID</th>
+                                <th>NAME</th>
+                                <th>UNIT / DEPARTMENT</th>
+                                <th>DECISION</th>
+                                <th>NOTE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0112238676</td>
+                                <td>Alex Thompson</td>
+                                <td>Bursary Office</td>
+                                <td>
+                                    <span class="badge badge-rejected">Rejected</span>
+                                </td>
+                                <td>Outstanding tuition balance for Semester 8.</td>
+                            </tr>
+                            <tr>
+                                <td>0112238676</td>
+                                <td>Alex Thompson</td>
+                                <td>Hostel Management</td>
+                                <td>
+                                    <span class="badge badge-approved">Approved</span>
+                                </td>
+                                <td>Room checked and keys returned.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

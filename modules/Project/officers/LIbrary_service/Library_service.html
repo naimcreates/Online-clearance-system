@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Officer Portal - Library Services</title>
+
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">U</div>
+        <div class="brand-text">
+          <div class="brand-title">UniClearance</div>
+          <div class="brand-sub">SYSTEM</div>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link active" href="Library_service.html">
+          <span class="nav-ic" aria-hidden="true">▦</span>
+          <span>Queue Management</span>
+        </a>
+        <a class="nav-link" href="appoinment_req_ls.html">
+          <span class="nav-ic" aria-hidden="true">📅</span>
+          <span>Appointments</span>
+        </a>
+        <a class="nav-link" href="history_ro_02.html">
+          <span class="nav-ic" aria-hidden="true">〽</span>
+          <span>Department Analytics</span>
+        </a>
+      </nav>
+
+      <button class="logout" type="button">Logout</button>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="icon-btn" type="button" aria-label="Open menu">☰</button>
+          <div class="topbar-title">Officer Portal</div>
+        </div>
+
+        <div class="topbar-right">
+          <button class="icon-btn" type="button" aria-label="Notifications">🔔</button>
+          <div class="user">
+            <div class="user-text">
+              <div class="user-name">Mrs. Pince</div>
+              <div class="user-role">OFFICER</div>
+            </div>
+            <div class="avatar">MP</div>
+          </div>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="center-header">
+          <div class="center-title">
+            <h2>Library Services <span class="pill">Dashboard</span></h2>
+            <p>Manage student clearance requests and verifications</p>
+          </div>
+
+          <div class="mini-stats">
+            <div class="mini-card">
+              <div class="mini-label">PENDING</div>
+              <div class="mini-value blue">2</div>
+            </div>
+            <div class="mini-card">
+              <div class="mini-label">PROCESSED</div>
+              <div class="mini-value green">0</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-grid">
+          <section class="panel list-panel" aria-label="Student queue">
+            <div class="search-row">
+              <div class="search">
+                <span class="search-ic">🔎</span>
+                <input type="text" placeholder="Search Student ID..." aria-label="Search Student" />
+              </div>
+            </div>
+
+            <div class="student-list">
+              <div class="student-item active">
+                <div class="student-left">
+                  <div class="initials">AT</div>
+                  <div class="student-meta">
+                    <div class="student-name">Alex Thompson</div>
+                    <div class="student-id">0112238676</div>
+                    <div class="student-batch">BATCH 223</div>
+                  </div>
+                </div>
+                <span class="badge pending">Pending</span>
+              </div>
+
+              <div class="student-item">
+                <div class="student-left">
+                  <div class="initials gray">JD</div>
+                  <div class="student-meta">
+                    <div class="student-name">Jamie Doe</div>
+                    <div class="student-id">0112238676</div>
+                    <div class="student-batch">BATCH 231</div>
+                  </div>
+                </div>
+                <span class="badge pending">Pending</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel detail-panel" aria-label="Student details">
+            <div class="detail-head">
+              <div class="detail-name">
+                <h3>Alex Thompson</h3>
+                <div class="detail-sub">
+                  <span>#</span><span>0112238676</span>
+                  <span class="dot">•</span>
+                  <span>Batch 223</span>
+                </div>
+              </div>
+
+              <div class="detail-right">
+                <span class="badge pending">Pending</span>
+                <div class="updated">Last Updated: Today</div>
+              </div>
+            </div>
+
+            <hr class="thin" />
+
+            <div class="section-title">
+              <span class="sec-ic">☑</span>
+              <span>CHECKLIST VERIFICATION</span>
+            </div>
+
+            <div class="check-row">
+              <div class="check-left">
+                <span class="radio"></span>
+                <span>All Borrowed Books</span>
+              </div>
+              <span class="status-pill pending2">PENDING</span>
+            </div>
+
+            <div class="check-row">
+              <div class="check-left">
+                <span class="radio"></span>
+                <span>Book Damage Assessment</span>
+              </div>
+              <span class="status-pill pending2">PENDING</span>
+            </div>
+
+            <div class="check-row success">
+              <div class="check-left">
+                <span class="tick">✓</span>
+                <span>Library Account Status</span>
+              </div>
+              <span class="status-pill active">ACTIVE</span>
+            </div>
+
+            <hr class="thin" />
+
+            <div class="notes">
+              <div class="notes-title">Officer Decision &amp; Notes</div>
+              <textarea placeholder="Enter any remarks regarding this application..."></textarea>
+
+              <div class="actions">
+                <button class="btn danger" type="button">
+                  <span class="btn-ic">✕</span>
+                  Reject Request
+                </button>
+                <button class="btn primary" type="button">
+                  <span class="btn-ic">✓</span>
+                  Approve &amp; Clear Student
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>

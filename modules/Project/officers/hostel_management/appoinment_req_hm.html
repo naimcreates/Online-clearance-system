@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Officer Portal - Hostel Appointments</title>
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">U</div>
+                <div class="brand-text">
+                    <div class="brand-title">UniClearance</div>
+                    <div class="brand-sub">SYSTEM</div>
+                </div>
+            </div>
+
+            <nav class="nav" aria-label="Primary">
+                <a class="nav-link" href="hostel_management.html">
+                  <span class="nav-ic" aria-hidden="true">▦</span>
+                  <span>Queue Management</span>
+                </a>
+                <a class="nav-link active" href="appoinment_req_hm.html">
+                  <span class="nav-ic" aria-hidden="true">📅</span>
+                  <span>Appointments</span>
+                </a>
+                <a class="nav-link" href="history_04.html">
+                  <span class="nav-ic" aria-hidden="true">〽</span>
+                  <span>Department Analytics</span>
+                </a>
+              </nav>
+
+            <button class="logout">Logout</button>
+        </aside>
+
+        <main class="main">
+            <header class="topbar">
+                <div class="topbar-left">
+                    <button class="icon-btn">☰</button>
+                    <div class="topbar-title">Officer Portal</div>
+                </div>
+
+                <div class="topbar-right">
+                    <button class="icon-btn">🔔</button>
+                    <div class="user">
+                        <div class="user-text">
+                            <div class="user-name">Mr. Filch</div>
+                            <div class="user-role">OFFICER</div>
+                        </div>
+                        <div class="avatar">MF</div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="content">
+                <div class="page-head">
+                    <div class="page-title">
+                        <h2>Appointment Requests</h2>
+                        <p>Manage your meeting schedule</p>
+                    </div>
+
+                    <div class="dept">
+                        <span class="dept-label">DEPARTMENT</span>
+                        <span class="dept-pill">Hostel Management</span>
+                    </div>
+                </div>
+
+                <div class="section-head">
+                    <div class="section-left">
+                        <span class="warn-ic">🔔</span>
+                        <span class="section-title">Pending Approvals</span>
+                        <span class="count-pill">1</span>
+                    </div>
+                </div>
+
+                <div class="request-card">
+                    <div class="card-top">
+                        <div class="who">
+                            <div class="name">Alex Thompson</div>
+                            <div class="id">0112238676</div>
+                        </div>
+
+                        <div class="when">
+                            <div class="time">10:00 AM</div>
+                            <div class="date">JAN 30</div>
+                        </div>
+                    </div>
+
+                    <div class="note-box">
+                        <div class="note-label">STUDENT NOTE</div>
+                        <div class="note-text">"submitted"</div>
+                    </div>
+
+                    <div class="btn-row">
+                        <button class="btn outline">
+                            <span class="btn-ic">✕</span>
+                            Decline
+                        </button>
+                        <button class="btn primary">
+                            <span class="btn-ic">✓</span>
+                            Confirm
+                        </button>
+                    </div>
+                </div>
+
+                <hr class="divider" />
+
+                <div class="section-head">
+                    <div class="section-left">
+                        <span class="cal-ic">📅</span>
+                        <span class="section-title">Upcoming Schedule</span>
+                    </div>
+                </div>
+
+                <p class="empty">No confirmed appointments.</p>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>

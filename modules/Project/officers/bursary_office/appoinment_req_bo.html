@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Officer Portal - Bursary Appointments</title>
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">U</div>
+                <div class="brand-text">
+                    <div class="brand-title">UniClearance</div>
+                    <div class="brand-sub">SYSTEM</div>
+                </div>
+            </div>
+
+            <nav class="nav" aria-label="Primary">
+                <a class="nav-link" href="bursary_office.html">
+                  <span class="nav-ic" aria-hidden="true">▦</span>
+                  <span>Queue Management</span>
+                </a>
+                <a class="nav-link active" href="appoinment_req_bo.html">
+                  <span class="nav-ic" aria-hidden="true">📅</span>
+                  <span>Appointments</span>
+                </a>
+                <a class="nav-link" href="history_04.html">
+                  <span class="nav-ic" aria-hidden="true">〽</span>
+                  <span>Department Analytics</span>
+                </a>
+            </nav>
+
+            <button class="logout">Logout</button>
+        </aside>
+
+        <main class="main">
+            <header class="topbar">
+                <div class="topbar-left">
+                    <button class="icon-btn">☰</button>
+                    <div class="topbar-title">Officer Portal</div>
+                </div>
+
+                <div class="topbar-right">
+                    <button class="icon-btn">🔔</button>
+                    <div class="user">
+                        <div class="user-text">
+                            <div class="user-name">Mr. Scrooge</div>
+                            <div class="user-role">OFFICER</div>
+                        </div>
+                        <div class="avatar">MS</div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="content">
+                <div class="page-head">
+                    <div class="page-title">
+                        <h2>Appointment Requests</h2>
+                        <p>Manage your meeting schedule</p>
+                    </div>
+
+                    <div class="dept">
+                        <span class="dept-label">DEPARTMENT</span>
+                        <span class="dept-pill">Bursary Office</span>
+                    </div>
+                </div>
+
+                <div class="section-head">
+                    <div class="section-left">
+                        <span class="warn-ic">🔔</span>
+                        <span class="section-title">Pending Approvals</span>
+                        <span class="count-pill">2</span>
+                    </div>
+                </div>
+
+                <div class="pending-grid">
+                    <div class="request-card">
+                        <div class="card-top">
+                            <div class="who">
+                                <div class="name">Alex Thompson</div>
+                                <div class="id">0112238676</div>
+                            </div>
+                            <div class="when">
+                                <div class="time">03:00 PM</div>
+                                <div class="date">NOV 28</div>
+                            </div>
+                        </div>
+
+                        <div class="note-box">
+                            <div class="note-label">STUDENT NOTE</div>
+                            <div class="note-text">"Payment issue"</div>
+                        </div>
+
+                        <div class="btn-row">
+                            <button class="btn outline"><span class="btn-ic">✕</span>Decline</button>
+                            <button class="btn primary"><span class="btn-ic">✓</span>Confirm</button>
+                        </div>
+                    </div>
+
+                    <div class="request-card">
+                        <div class="card-top">
+                            <div class="who">
+                                <div class="name">Alex Thompson</div>
+                                <div class="id">0112238676</div>
+                            </div>
+                            <div class="when">
+                                <div class="time green">10:00 AM</div>
+                                <div class="date">JAN 24</div>
+                            </div>
+                        </div>
+
+                        <div class="note-box">
+                            <div class="note-label">STUDENT NOTE</div>
+                            <div class="note-text">"issues"</div>
+                        </div>
+
+                        <div class="btn-row">
+                            <button class="btn outline"><span class="btn-ic">✕</span>Decline</button>
+                            <button class="btn primary"><span class="btn-ic">✓</span>Confirm</button>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="divider" />
+
+                <div class="section-head">
+                    <div class="section-left">
+                        <span class="cal-ic">📅</span>
+                        <span class="section-title">Upcoming Schedule</span>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <div class="day">
+                        <div class="day-left">
+                            <span class="dot"></span>
+                            <span class="line"></span>
+                        </div>
+                        <div class="day-body">
+                            <div class="day-title">FRI NOV 28 2025</div>
+
+                            <div class="up-card">
+                                <div class="up-top">
+                                    <div>
+                                        <div class="up-name">Jordan Smith</div>
+                                        <div class="up-id">0112420876</div>
+                                    </div>
+                                    <span class="status confirmed"><span class="status-ic">⦿</span>Confirmed</span>
+                                </div>
+
+                                <div class="up-mid">
+                                    <span class="clock-ic">🕒</span>
+                                    <span class="up-time">11:00 AM</span>
+                                </div>
+
+                                <div class="up-note">
+                                    <span class="box-ic">□</span>
+                                    <span>Clarification on exam fees</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="day">
+                        <div class="day-left">
+                            <span class="dot"></span>
+                            <span class="line short"></span>
+                        </div>
+                        <div class="day-body">
+                            <div class="day-title">SAT NOV 29 2025</div>
+
+                            <div class="up-card">
+                                <div class="up-top">
+                                    <div>
+                                        <div class="up-name">Jamie Doe</div>
+                                        <div class="up-id">0112238676</div>
+                                    </div>
+                                    <span class="status confirmed"><span class="status-ic">⦿</span>Confirmed</span>
+                                </div>
+
+                                <div class="up-mid">
+                                    <span class="clock-ic">🕒</span>
+                                    <span class="up-time">09:00 AM</span>
+                                </div>
+
+                                <div class="up-note">
+                                    <span class="box-ic">□</span>
+                                    <span>Scholarship application</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>

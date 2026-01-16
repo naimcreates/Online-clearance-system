@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UniClearance Officer Portal</title>
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">U</div>
+        <div class="brand-text">
+          <div class="brand-title">UniClearance</div>
+          <div class="brand-sub">SYSTEM</div>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link active" href="hostel_management.html">
+          <span class="nav-ic" aria-hidden="true">▦</span>
+          <span>Queue Management</span>
+        </a>
+        <a class="nav-link" href="appoinment_req_hm.html">
+          <span class="nav-ic" aria-hidden="true">📅</span>
+          <span>Appointments</span>
+        </a>
+        <a class="nav-link" href="history_04.html">
+          <span class="nav-ic" aria-hidden="true">〽</span>
+          <span>Department Analytics</span>
+        </a>
+      </nav>
+
+      <button class="logout">Logout</button>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="menu-btn" type="button" aria-label="Open menu">☰</button>
+          <span class="topbar-title">Officer Portal</span>
+        </div>
+
+        <div class="topbar-right">
+          <button class="icon-btn" type="button" aria-label="Notifications">🔔</button>
+
+          <div class="user-info">
+            <div class="user-name">Mr. Filch</div>
+            <div class="user-role">OFFICER</div>
+          </div>
+
+          <div class="user-avatar">MF</div>
+        </div>
+      </header>
+
+      <main class="content">
+        <div class="page-header">
+          <div>
+            <h1>
+              Hostel Management
+              <span class="badge-pill">Dashboard</span>
+            </h1>
+            <p class="page-subtitle">Manage student clearance requests and verifications.</p>
+          </div>
+
+          <div class="status-summary">
+            <div class="status-card">
+              <div class="status-label">PENDING</div>
+              <div class="status-value">0</div>
+            </div>
+
+            <div class="status-card">
+              <div class="status-label">PROCESSED</div>
+              <div class="status-value processed">1</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns">
+          <section class="queue-panel" aria-label="Queue panel">
+            <div class="queue-header">
+              <h2>Queue</h2>
+              <input type="text" class="queue-search" placeholder="Search student..." />
+            </div>
+
+            <div class="queue-list">
+              <article class="queue-item selected">
+                <div class="queue-avatar">AT</div>
+                <div class="queue-info">
+                  <div class="queue-name">Alex Thompson</div>
+                  <div class="queue-meta">
+                    <span># 0112230676</span>
+                    <span class="divider">•</span>
+                    <span>Batch 223</span>
+                  </div>
+                </div>
+                <span class="badge status-approved">Approved</span>
+              </article>
+            </div>
+          </section>
+
+          <section class="detail-panel" aria-label="Student detail panel">
+            <header class="detail-header">
+              <div>
+                <h2>Alex Thompson</h2>
+                <div class="detail-meta">
+                  <span># 0112230676</span>
+                  <span class="divider">•</span>
+                  <span>Batch 223</span>
+                </div>
+              </div>
+
+              <div class="detail-header-right">
+                <span class="badge status-approved">Approved</span>
+                <span class="last-updated">Last Updated: Today</span>
+              </div>
+            </header>
+
+            <div class="checklist-section">
+              <h3>Checklist Verification</h3>
+
+              <div class="checklist">
+                <div class="check-item cleared">
+                  <div class="check-left">
+                    <span class="check-icon">✔</span>
+                    <span>Hostel Rent (Dec)</span>
+                  </div>
+                  <span class="chip chip-cleared">CLEARED</span>
+                </div>
+
+                <div class="check-item cleared">
+                  <div class="check-left">
+                    <span class="check-icon">✔</span>
+                    <span>Mess Dues</span>
+                  </div>
+                  <span class="chip chip-cleared">CLEARED</span>
+                </div>
+
+                <div class="check-item cleared">
+                  <div class="check-left">
+                    <span class="check-icon">✔</span>
+                    <span>Room Handover</span>
+                  </div>
+                  <span class="chip chip-cleared">CLEARED</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="notes-section">
+              <label for="officer-notes">Officer Decision &amp; Notes</label>
+              <textarea id="officer-notes" placeholder="Enter any remarks regarding this application..."></textarea>
+            </div>
+
+            <div class="actions">
+              <button class="btn btn-outline-danger" type="button">Reject Request</button>
+              <button class="btn btn-primary" type="button">Approve &amp; Clear Student</button>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>
