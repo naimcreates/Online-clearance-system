@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>System Settings</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="app">
+
+  <aside class="sidebar">
+<div class="logo">
+  <div class="logo-icon">
+    🛡️
+  </div>
+  <div class="logo-text">
+    <span class="logo-title">UniClearance</span>
+    <span class="logo-sub">SYSTEM</span>
+  </div>
+</div>
+    <nav>
+      <a href="index.html">System Overview</a>
+      <a href="users.html">User Management</a>
+      <a class="active" href="settings.html">System Settings</a>
+    </nav>
+    <button class="logout">Logout</button>
+  </aside>
+
+  <div class="main">
+   <header class="topbar">
+  <div class="topbar-left">
+    <div class="menu-icon">☰</div>
+    <h3>Admin Portal</h3>
+  </div>
+
+  <div class="topbar-right">
+    <div class="bell">🔔</div>
+
+    <div class="profile">
+      <div class="profile-text">
+        <span class="name">Dr. Al-Fayed</span>
+        <span class="role">ADMIN</span>
+      </div>
+      <div class="avatar">DA</div>
+    </div>
+  </div>
+</header>
+
+
+   <main class="content">
+
+  <h1 class="page-title">System Configuration</h1>
+
+  <div class="settings-card">
+
+    <h3 class="section-title">Clearance SLAs</h3>
+
+    <div class="form-grid">
+      <div class="form-group">
+        <label>STANDARD PROCESSING TIME</label>
+        <select>
+          <option>24 Hours</option>
+                    <option>48 Hours</option>
+
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>EMERGENCY SLA</label>
+        <select>
+          <option>12 Hours</option>
+          <option>06 Hours</option>
+
+        </select>
+      </div>
+    </div>
+
+    <h3 class="section-title">System Access</h3>
+
+    <div class="toggle-row">
+      <span>Allow Student Logins</span>
+      <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="toggle-row">
+      <span>Maintenance Mode</span>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <button class="primary-btn full save-btn">Save Changes</button>
+
+  </div>
+
+</main>
+
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Management</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="app">
+
+  <aside class="sidebar">
+<div class="logo">
+  <div class="logo-icon">
+    🛡️
+  </div>
+  <div class="logo-text">
+    <span class="logo-title">UniClearance</span>
+    <span class="logo-sub">SYSTEM</span>
+  </div>
+</div>
+    <nav>
+      <a href="index.html">System Overview</a>
+      <a class="active" href="users.html">User Management</a>
+      <a href="settings.html">System Settings</a>
+    </nav>
+    <button class="logout">Logout</button>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+  <div class="topbar-left">
+    <div class="menu-icon">☰</div>
+    <h3>Admin Portal</h3>
+  </div>
+
+  <div class="topbar-right">
+    <div class="bell">🔔</div>
+
+    <div class="profile">
+      <div class="profile-text">
+        <span class="name">Dr. Al-Fayed</span>
+        <span class="role">ADMIN</span>
+      </div>
+      <div class="avatar">DA</div>
+    </div>
+  </div>
+</header>
+
+
+    <main class="content">
+      <div class="header-row">
+        <h1>User Management</h1>
+        <button class="primary-btn">+ Add New User</button>
+      </div>
+
+      <table>
+        <tr>
+          <th>User</th>
+          <th>Role</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>Alex Thompson<br><span>alex@uni.edu</span></td>
+          <td>STUDENT</td>
+          <td class="active">Active</td>
+          <td>Edit</td>
+        </tr>
+        <tr>
+          <td>Sarah Jenkins<br><span>sarah@uni.edu</span></td>
+          <td>OFFICER</td>
+          <td class="active">Active</td>
+          <td>Edit</td>
+        </tr>
+      </table>
+    </main>
+  </div>
+
+</div>
+
+</body>
+</html>

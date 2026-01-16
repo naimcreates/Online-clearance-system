@@ -1,3 +1,13 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
 /* basic reset for all elements */
 * {
   margin: 0;
@@ -478,4 +488,62 @@ nav a.active::before {
   height: 26px;
   border-radius: 6px;
   background: #2563eb;
+}
+
+/* tablet and mobile responsive */
+@media (max-width: 1024px) {
+  .overview {
+    grid-template-columns: 1fr;
+  }
+
+  .progress {
+    position: static;
+    transform: none;
+    margin-top: 24px;
+  }
+
+  .profile-card::after {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .sidebar {
+    width: 200px;
+    padding: 20px 14px;
+  }
+
+  .main {
+    padding: 20px 24px;
+  }
+}
+/* mobile view */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .app {
+    flex-direction: column;
+  }
+
+  .main {
+    padding: 16px;
+  }
+
+  .topbar {
+    padding: 0 16px;
+  }
+
+  .info {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
 }
